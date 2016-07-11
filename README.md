@@ -1,4 +1,3 @@
-# Mr Porter - functional test demo
 
 We need automation!
 
