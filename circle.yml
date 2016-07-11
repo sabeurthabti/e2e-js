@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: 5.9.0
+
+test:
+  override:
+    - ./test.sh start
+  post:
+    - ./test.sh stop

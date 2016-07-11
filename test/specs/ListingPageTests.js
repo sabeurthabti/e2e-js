@@ -14,9 +14,6 @@ describe('Listing Page', function() {
       console.log(pageNumberBefore);
       expect('2323').toBe('2323');
 
-      await listingPage.clickNext();
-
-
       done();
     } catch(e) {
       console.log(e)
