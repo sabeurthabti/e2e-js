@@ -5,5 +5,3 @@ machine:
 test:
   override:
     - ./test.sh start
-  post:
-    - ./test.sh stop
