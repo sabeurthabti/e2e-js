@@ -9,6 +9,6 @@ module.exports = class BasePage {
       else throw new Error(e);
   }
 
-  
+
 
 }
