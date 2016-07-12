@@ -4,7 +4,7 @@
   "description": "demo project to test WebdriverIO integration with Jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/wdio wdio.conf.js"
+    "test": "./test.sh"
   },
   "dependencies": {
     "expect": "^1.13.4",
