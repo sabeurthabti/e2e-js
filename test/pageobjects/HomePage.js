@@ -17,14 +17,14 @@ export default class ListingPage extends BasePage {
 
 
 
-  async getLandingText() {
-    var landingText = await browser.getText(this.selectors.LANDING_TEXT);
+  getLandingText() {
+    var landingText = browser.getText(this.selectors.LANDING_TEXT);
     return landingText;
   }
 
-  async getNumberOfSurahs() {
+  getNumberOfSurahs() {
 
-    var surahs = await browser.elements(this.selectors.SURAH_LIST);
+    var surahs = browser.elements(this.selectors.SURAH_LIST);
     return surahs.value.length;
 
   }

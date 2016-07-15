@@ -3,14 +3,14 @@ describe('Home Page', function() {
 
   let homePage = new Homepage(browser);
 
-  it('Should Have English Heading', async () =>  {
-    await browser.url('http://quran.com');
-    let text = await homePage.getLandingText();
+  it('Should Have English Heading', () =>  {
+    browser.url('http://quran.com');
+    let text = homePage.getLandingText();
     expect(text).to.equal(`THE NOBLE QUR'AN`);
   });
 
-  it('Should have 114 surahs', async () => {
-    let numberSurahs = await homePage.getNumberOfSurahs();
+  it('Should have 114 surahs', () => {
+    let numberSurahs = homePage.getNumberOfSurahs();
     expect(numberSurahs).to.equal(114);
   })
 
