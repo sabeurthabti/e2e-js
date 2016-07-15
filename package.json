@@ -4,7 +4,8 @@
   "description": "demo project to test WebdriverIO integration with Jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "bash ./test.sh start"
+    "test": "bash ./test.sh start",
+    "postest": "bash ./test.sh stop"
   },
   "dependencies": {
     "expect": "^1.13.4",
