@@ -8,7 +8,8 @@ if [ "$1" == 'stop' ]; then
 elif [ "$1" == 'start' ]; then
         echo "Starting selenium server..."
         PATH="./node_modules/phantomjs/bin:$PATH" java -jar selenium-server-standalone-2.47.0.jar &> /dev/null &
-        sleep 2
+        sleep 5
+        echo "Done Sleeping"
         ./node_modules/.bin/wdio wdio.conf.js
 else
         echo "Nothing to do"
